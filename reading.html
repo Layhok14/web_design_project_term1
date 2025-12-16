@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="w-full h-full bg-[#F7F1EA]">
-    <div class="header w-full h-[10vh] flex p-3 justify-between">
+    <div class="header w-full h-[8vh] flex p-3 z-50 justify-between">
         <div class="logo flex justify-center items-center">
             <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="100" height="100" transform="matrix(-1 0 0 1 100 0)" fill="url(#pattern0_119_76)"/>
@@ -38,9 +38,9 @@
             </svg>
         </div>
     </div>
-
-    <div class="study-nav w-[92%] h-[18vh] bg-white m-auto flex border-solid rounded-t-2xl justify-between p-5 items-center">
-        <div class="source">
+    <div class="h-[8vh]"></div>
+    <div class="study-nav w-[92%] h-[18vh] top-0 sticky z-40 ml-[60px] bg-white flex rounded-t-2xl justify-between p-5 items-center">
+        <div class="source pl-10">
             <img src="./svg/File_duotone_line.svg" alt="">
             Source
         </div>
@@ -57,6 +57,63 @@
                 <img class="w-18 h-20" src="./svg/waveform.svg" alt="">
                 Audio
             </div>
+        </div>
+    </div>
+
+    <div class="main w-[92%] h-full bg-white m-auto my-8 p-8 border-solid rounded-b-2xl grid grid-cols-12 gap-4">
+        <div class="sidebar position-fixed col-span-3 flex flex-col gap-2">
+            <div class="box1 p-3 rounded-2xl bg-[#F7F1EA]">
+                <input class="w-4 h-4" type="checkbox"> 
+                <label class="pl-2 text-sm" for="">Introduction to Economic Systems and Their Organization</label>
+                <div class="quiz w-[65%] text-sm flex border-2 border-solid border-gray-600 p-2 mt-2 ml-5 rounded-2xl gap-1">
+                    <img class="w-5 h-5" src="./svg/Book_check.svg" alt="">
+                    Take quiz to complete
+                </div>
+            </div>
+            <div class="box2 p-3">
+                <input class="w-4 h-4"type="checkbox"> 
+                <label class="pl-2 text-sm" for="">Command, Market, and Mixed Economies
+            </div>
+            <div class="box3 p-3">
+                <input class="w-4 h-4"type="checkbox"> 
+                <label class="pl-2 text-sm" for="">Regulations: The Rules of the Game
+            </div>
+            <div class="box4 p-3">
+                <input class="w-4 h-4"type="checkbox"> 
+                <label class="pl-2 text-sm" for="">The Increase of Globalization
+            </div>
+            <div class="box5 p-3">
+                <input class="w-4 h-4"type="checkbox"> 
+                <label class="pl-2 text-sm" for="">Impact and Pushback Against GLobalization
+            </div>
+        </div>
+
+        <div class="context col-span-8 p-7 pt-0">
+            <h1 class="font-semibold text-2xl pb-3">Introduction to Economic Systems and Their Organization</h1>
+            <p>After reading this section, you will be able to:</p>
+            <ul class="flex flex-col gap-2 list-disc p-5 pl-10">
+                <li>Compare traditional, command, and market economies</li>
+                <li>Explain what Gross Domestic Product (GDP) means</li>
+                <li>Understand how important globalization is and what effects it has</li>
+            </ul>
+            <p class="pb-4">Think about how complicated a modern economy is. It includes everything that is made and every service provided, all buying and selling, and all jobs. 
+                The economic life of every person is connected, even if just a little, to the economic lives of thousands or even millions of other people. Who organizes
+                 and manages this huge system? Who makes sure that, for example, a society produces the right number of televisions that people need and want? Who makes 
+                 sure that the correct number of workers are in the electronics industry? Who makes sure that televisions are made in the best way possible? How does all
+                  of this happen?
+            </p>
+            <p class="py-5">There are at least three ways that societies organize their economy. Traditional EconomyThe first is the traditional economy, which is the oldest system
+                 and is still used in parts of Asia, Africa, and South America. Traditional economies run their economic activities the same way they always have 
+                 (following tradition). Jobs are passed down within families. Most families are farmers who grow crops using old methods. What you make is what you use
+                  yourself. Because tradition guides life, there isn't much economic progress or new development.
+
+            </p>
+            <img src="./img/pyramid.jpg" alt="">
+            <p class="pt-5">Command economies are very different. Command EconomyIn a command economy, economic work is focused on goals set by a ruler or a group in charge. 
+                Ancient Egypt is a good example: a large part of the economy was spent on building pyramids, like those in Figure 1.8, for the pharaohs. A youth soccer 
+                academy is another example: the club provides coaching, facilities, and a path to a professional career. In return, the young players commit their time 
+                and effort to train and play as the club directs. In the last century, communism often used command economies.
+            </p>
         </div>
     </div>
 </body>
