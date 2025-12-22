@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" relative ">
+    <img class=" object-cover absolute w-full h-[650px] sm:h-[700px] md:h-[500px] lg:h-[500px] "
+        src="../image/IMG_8459.JPG" alt="background">
+
+    <div class=" relative w-full ">
+        <div class=" flex justify-between p-2 items-center">
+            <div class=" text-xl sm:text-2xl md:text-3xl lg:text-4xl pl-8 font-semibold">
+
+                <a class=" flex items-center" href="homepage.html">
+                    <img src="../image/Main_logo.png" class=" w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 lg:w-14 lg:h-14"
+                        alt="">
+                    <div class="font-bold">
+                        SEA-L
+                    </div>
+                </a>
+            </div>
+            <div class=" flex gap-7 font-semibold text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] ">
+                <div class=" hover:scale-105 hover:text-orange-500 hover:underline transition-all text-black">
+                    <a href="">Explore</a>
+                </div>
+                <div class=" hover:scale-105 hover:text-orange-500 hover:underline transition-all text-black">
+                    <a href="">My Space</a>
+                </div>
+            </div>
+
+            <div class=" flex px-5 gap-3 items-center ">
+                <div
+                    class=" hover:scale-110 transition-all text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-semibold border-2 border-orange-400 text-orange-500 p-1 bg-orange-100 rounded-md">
+                    <a href="">Sign up</a>
+                </div>
+                <div
+                    class=" hover:scale-110 transition-all text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-semibold border-2 border-orange-400 text-white bg-orange-600 p-1 px-2 rounded-md">
+                    <a href="login.html">Log in</a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between px-12">
+            <div>
+                <div class=" font-bold mt-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-[500px] ">
+                    Re-imagining textbooks for every learner
+                </div>
+                <div class="font-semibold text-sm sm:text-lg md:text-xl lg:text-2xl mt-10 w-[50vw]">
+                    Learn Your Way transforms content into a dynamic and engaging learning experience tailored for you.
+                </div>
+            </div>
+
+            <!-- Interest Card -->
+            <div class="flex justify-center mt-4">
+                <div class="bg-white shadow-xl rounded-2xl p-6 w-64 border-2">
+                    <h3 class="font-semibold text-gray-700 mb-3">What are your interests?</h3>
+                    <div class="grid grid-cols-4 gap-4 text-2xl">
+                        <span>📗</span><span>🔭</span><span>🎨</span><span>🎵</span>
+                        <span>🎮</span><span>🏃‍♂️</span><span>📷</span><span>🌳</span>
+                        <span>⚽</span><span>🚴‍♂️</span><span>🍽️</span><span>🎧</span>
+                        <span>🏀</span><span>🥊</span><span>🍏</span><span>🎮</span>
+                        <span>🛹</span><span>🤖</span><span>🚴‍♀️</span><span>🏆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Category Filters -->
+        <section class=" mt-24 text-xs sm:text-xs md:text-sm lg:text-lg py-10 flex justify-center gap-4 flex-wrap">
+            <a href="./homepage.html"
+                class="hover:scale-105 transition-all hover:shadow-md px-5 py-2 rounded-full bg-gray-200 text-gray-700 ">All</a>
+            <a href="./astronomy.html"
+                class="hover:scale-105 transition-all hover:shadow-md px-5 py-2 rounded-full bg-orange-500 text-white font-semibold">Astronomy</a>
+            <a href="./biology.html"
+                class="hover:scale-105 transition-all hover:shadow-md px-5 py-2 rounded-full bg-gray-200 text-gray-700">Biology</a>
+            <a href="./chemistry.html"
+                class="hover:scale-105 transition-all hover:shadow-md px-5 py-2 rounded-full bg-gray-200 text-gray-700">Chemistry</a>
+        </section>
+    </div>
+
+    <!-- Cards Grid -->
+    <section
+        class=" mt-10 w-full mx-auto px-6 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-full">
+
+
+        <!-- Card astro.earth -->
+        <a href="login.html">
+            <div class=" hover:scale-105 border border-orange-300 rounded-[45px] shadow-sm hover:shadow-md transition">
+                <div>
+                    <p class="text-orange-500 text-lg font-semibold p-3 flex items-center gap-1">🪐 Astronomy</p>
+                    <h3 class="font-bold pl-5">Earth and Sky</h3>
+                </div>
+
+                <img src="../image/Rectangle 18.png" class=" mt-3 w-full" />
+            </div>
+        </a>
+
+
+        <!-- Card astro,comet -->
+        <a href="login.html">
+            <div class=" hover:scale-105 border border-orange-300 rounded-[45px] shadow-sm hover:shadow-md transition">
+                <div>
+                    <p class="text-orange-500 text-lg font-semibold p-4 flex items-center gap-1">🪐 Astronomy</p>
+                    <h3 class="font-bold pl-4">The "Long‑Haired" Comets</h3>
+                </div>
+                <img src="../image/comet.png" class=" mt-3 w-full" />
+            </div>
+        </a>
+    </section>
+
+    <footer class=" flex flex-col items-center   ">
+        <div class=" flex gap-0.5  justify-center font-light text-sm ">
+            <p>The content used to demonstrate Sea-L is provided by</p>
+            <a class=" underline hover:text-yellow-700 " href="https://openstax.org/">OpenStax</a>
+        </div>
+
+        <div
+            class=" p-8 mb-14 border-2 border-orange-500 gap-4 mt-10 flex flex-col w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] bg-orange-300 rounded-[140px] items-center justify-center">
+            <h2 class=" font-semibold text-xl">Cutting-edge AI x Pedagogy</h2>
+            <h3 class="  w-[300px] text-xs sm:w-[300px] md:w-[300px] lg:w-[400px] text-center">SEA-L demonstrates what's
+                possible when we combine Google's cutting edge
+                AI research with effective learning science. Developed in collaboration with pedagogy experts, it's
+                backed by research to drive quality and efficacy for every learner.</h3>
+            <div class="  text-xs p-3 rounded-full bg-orange-500">
+                <a href="https://arxiv.org/abs/2509.13348" target="_blank">Read our tech report</a>
+            </div>
+        </div>
+    </footer>
+    <div class=" absolute bottom-2 left-3 text-sm font-semibold">SEA-L</div>
+    <div class=" absolute bottom-2 right-3 opacity-80 text-xs">
+        <a href="https://policies.google.com/terms" target="_blank">Privacy &Terms</a>
+    </div>
+</body>
+
+</html>
