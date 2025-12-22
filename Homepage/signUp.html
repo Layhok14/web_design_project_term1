@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="transitiion.js"></script>
+    <link rel="stylesheet" href="transition.css">
+</head>
+
+<!-- set min-100vh -->
+
+<body class=" min-h-screen flex items-center justify-center bg-gray-200 ">
+
+    <!-- Main container -->
+    <!-- create a rectangle of90vh, make width full then set maxwidth to 5xl -->
+    <div id="page" class=" relative flex h-[90vh] w-full max-w-5xl bg-slate-100 overflow-hidden rounded-2xl">
+
+        <!-- create (x)button -->
+        <a href="homepage.html">
+            <div class=" absolute top-2 left-3 popup-btn text-3xl">&times;</div>
+        </a>
+
+        <!-- Welcome Back! (Login) on the left -->
+        <!-- set it as w-1/2 of the rectangle, md:flex is to flex the rectangle with the registration-->
+        <!-- flex-col is to flex the text -->
+        <div class=" hidden w-1/2 flex-col md:flex items-center justify-center text-white
+            bg-orange-400 rounded-e-[200px] ">
+            <h1 class="text-4xl font-bold mb-4 ">Welcome Back!</h1>
+            <p class="mb-6"> Already have an account?</p>
+            <a class="border-2 font-bold hover:bg-yellow-800 py-1 px-6 transition-all animate-bounce rounded"
+                href="login.html" onclick="switchPage(event, 'login.html','right')">
+                Login
+            </a>
+        </div>
+
+        <!-- Registration Form -->
+        <!-- it work because of w-full and (flex-1 same as w-1/2 ) -->
+        <div
+            class="w-full rounded-md p-10 focus:outline-none focus:border-orange-400 md:flex-1 flex items-center justify-center">
+            <form class="w-full max-w-sm space-y-4">
+                <h2 class="text-4xl font-bold mb-6">Registration</h2>
+
+                <!-- First Name -->
+                <div class="form-element ">
+                    <label class="font-semibold" for="firstName">First Name:</label>
+                    <input class=" w-full border-2 rounded-md p-2 focus:outline-none focus:border-orange-400"
+                        type="text" id="firstName" placeholder=" First name">
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-element ">
+                    <label class="font-semibold" for="firstName">Last Name:</label>
+                    <input class="w-full border-2 rounded-md p-2 focus:outline-none focus:border-orange-400" type="text"
+                        id="firstName" placeholder=" Last name">
+                </div>
+
+                <!-- Email -->
+                <div class="form-element">
+                    <label class="font-semibold" for="email">Email:</label>
+                    <input class="w-full border-2 rounded-md p-2 focus:outline-none focus:border-orange-400" type="text"
+                        id="email" placeholder="enter you email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-element">
+                    <label class="font-semibold" for="password">Password:</label>
+                    <input class="w-full border-2 rounded-md p-2 focus:outline-none focus:border-orange-400"
+                        type="password" id="password" placeholder=" Password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-element flex flex-col">
+                    <label class="font-semibold" for="Cpassword">Confirm Password:</label>
+                    <input class="w-full border-2 rounded-md p-2 focus:outline-none focus:border-orange-400"
+                        type="password" id="Cpassword" placeholder=" Confirm Password" required>
+                </div>
+
+                <!-- SIGN UP button -->
+                <div class="form-element ">
+                    <button onclick="signup()"
+                        class=" w-full border-2 rounded-md p-2  bg-orange-400 hover:bg-orange-500" type="submit">
+                        <a href="homepage.html">Sign Up</a>
+                    </button>
+                </div>
+
+                <!-- for md screen -->
+                <p class="switch text-sm md:hidden ">
+                    Already have an account?
+                    <a href="login.html" class="text-blue-600 hover:underline">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
