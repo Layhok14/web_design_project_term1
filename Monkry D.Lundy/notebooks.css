@@ -1,0 +1,167 @@
+
+body {
+    background-color: #FFD1BB;
+    margin: 0;
+    padding: 0;
+    color: #000000; 
+}
+/* Main container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.nav-button:hover:not(.active) {
+    background-color: #d0d0d0;
+}
+
+.nav-button.active {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+/* create new */
+.create-new-button {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.2s;
+}
+
+.create-new-button:hover {
+    background-color: #f0f0f0;
+}
+
+.create-new-button .fas.fa-plus {
+    color: #000;
+    font-size: 14px;
+}
+
+
+.main-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.notebook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* All the card */
+.notebook-card {
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: white; 
+}
+
+.notebook-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.orange {
+    background-color: #f56016; 
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.emoji {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    flex-grow: 1; 
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .notebook-grid {
+        grid-template-columns: 1fr; 
+    }
+    .navigation {
+        flex-wrap: wrap;
+    }
+    .create-new-button {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
