@@ -12,9 +12,25 @@ function login() {
 
     if (loginEmail === savedEmail && loginPassword === savedPassword) {
         alert("Login successful!");
-        window.location.href = "homepage.html";
+        window.location.href = "../UnlockHomepage/homepage Unlock.html";
     } else {
         alert("Invalid email or password");
     }
+}
+
+//Show password
+const password = document.getElementById("loginPassword");
+const showBtn = document.getElementById("showBtn");
+
+if (showBtn !==null && password !== null) {
+    showBtn.addEventListener("click", () => {
+        if (password.type === "password") {
+            password.type = "text";
+            showBtn.textContent = "Hide";
+        } else {
+            password.type = "password";
+            showBtn.textContent = "Show";
+        }
+    });
 }
 

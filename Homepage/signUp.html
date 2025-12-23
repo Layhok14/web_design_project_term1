@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <!-- <link rel="stylesheet" href="signup.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="transitiion.js"></script>
-    <link rel="stylesheet" href="transition.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/transition.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <!-- javascript -->
+    <script src="../javascript/signup.js" defer></script>
+    <script src="../javascript/transitiion.js" defer></script>
 </head>
 
 <!-- set min-100vh -->
@@ -81,9 +85,9 @@
 
                 <!-- SIGN UP button -->
                 <div class="form-element ">
-                    <button onclick="signup()"
+                    <button 
                         class=" w-full border-2 rounded-md p-2  bg-orange-400 hover:bg-orange-500" type="submit">
-                        <a href="homepage.html">Sign Up</a>
+                        <a onclick="signup()" href="../UnlockHomepage/homepage Unlock.html">Sign Up</a>
                     </button>
                 </div>
 

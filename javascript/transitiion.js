@@ -9,9 +9,6 @@ function switchPage(event, url, direction) {
         page.classList.add("slide-right");
     } 
     
-    // else {
-    //     page.classList.add("page")
-    // }
 
     setTimeout(() => {
         window.location.href = url;
