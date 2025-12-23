@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body class="w-full h-full bg-[#F7F1EA]">
+<body class="w-full bg-[#F7F1EA]">
     <div class="header w-full h-[6vh] lg:h-[8vh] md:h-[5vh] flex p-2 lg:pt-8 lg:p-3 md:p-2 justify-between">
         <div class="logo flex justify-center items-center">
             <svg class="lg:w-30 lg:h-30" width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -40,68 +38,56 @@
             </svg>
         </div>
     </div>
-    <div class="lg:h-[4vh]"></div>
-    <div class="study-nav w-[92%] h-[8vh] mb-5 md: mt-3 lg:h-[18vh] md:h-[10vh] top-0 z-10 sticky lg:ml-[60px] md:ml-[30px] ml-[16px] bg-white flex rounded-t-2xl justify-between lg:p-5 items-center">
+
+    <div class="study-nav w-[92%] h-[8vh] mb-5 md: mt-3 lg:h-[18vh] md:h-[10vh] lg:ml-[60px] md:ml-[30px] ml-[16px] bg-white flex rounded-t-2xl justify-between lg:p-5 items-center">
         <div class="source pl-10">
             <a href="./source.html">
-                <img class="md:w-10 md:h-5 w-8 h-8 lg:h-[50px] lg:w-30" src="./svg/File_duotone_line.svg" alt="">
-                <div class="text-[15px] md:text-sm">Source</div>
+                 <img class="md:w-10 md:h-5 w-8 h-8 lg:h-[50px] lg:w-30 lg:ml-2" src="./svg/File_duotone_line.svg" alt="">
+                <div class="text-[15px]  lg:text-xl md:text-sm">Source</div>
             </a>
-            
         </div>
         <div class="study-sessions w-[70%] h-full flex justify-evenly items-center">
-            <div class="text lg:h-full h-[7vh] w-[20%] lg:w-[18%] md:w-[15%] md:h-[9vh] flex flex-col justify-between items-center border-solid rounded-3xl p-1 lg:p-2 md:p-1 active:bg-[#FFE7D8] active:border-[#F8844D] active:border-[2px]">
+            <div class="text lg:h-full h-[7vh] w-[20%] lg:w-[18%] md:w-[15%] md:h-[9vh] flex flex-col justify-between items-center border-solid rounded-3xl p-1 lg:p-2 md:p-1 bg-[#FFE7D8] lg:border-[#F8844D] md:border-[#F8844D] border-[2px]">
                 <a href="./reading.html"><img class="lg:w-14 lg:h-12 md:w-10 md:h-8 w-10 h-10" src="./svg/Chat_alt_2_duotone_line.svg" alt=""></a>
                 <div class="md:hidden hidden lg:block">Immersive Text</div>
-                <div class="md:block hidden md:text-sm lg:hidden">Text</div>
+                <div class="md:block hidden md:tex-sm lg:hidden">Text</div>
             </div>
-            <div class="slide h-full lg:h-full lg:w-[18%] md:w-[15%] md:h-[10vh] p-3 md:p-3 flex flex-col justify-between items-center border-solid rounded-3xl md:gap-1 md:pt-1 lg:p-2 bg-[#E0A9FF] lg:border-[#CD29F6] border-[2px]">
+            <div class="slide lg:h-full lg:w-[18%] md:w-[15%] md:h-[10vh] p-4 md:p-3 flex flex-col justify-between items-center border-solid rounded-3xl md:gap-1 md:pt-1 lg:p-2 active:bg-[#E0A9FF] active:border-[#CD29F6] active:border-[2px]">
                 <a href="./slide.html"><img class="lg:w-10 lg:h-15 md:w-10 md:h-8 w-8 h-6" src="./svg/Youtube-Logo.svg" alt=""></a>
-                <div class="md:hidden hidden lg:block lg:text-[15px]">Slide & Narration</div>
+                <div class="md:hidden hidden lg:block">Slide & Narration</div>
                 <div class="md:block pt-0 hidden md:text-sm lg:hidden">Slide</div>
             </div>
-            <div class="audio lg:h-full h-[7vh] lg:w-[18%] md:w-[15%] md:h-[9vh] flex flex-col justify-center items-center border-solid rounded-3xl p-2 active:bg-[#b1fcaa] active::border-[#47FF37] active:border-[2px]">
-                <a href="./audio.html"><img class="lg:w-18 lg:h-18 md:[w-10 h-10] w-15 h-10 md:text-sm" src="./svg/waveform.svg" alt=""></a>
-                <div class="hidden md:block lg:block md:text-sm">Audio</div>
+            <div class="audio h-full lg:w-[18%] md:w-[15%] md:h-[9vh] flex flex-col justify-center items-center border-solid rounded-3xl p-2 active:bg-[#b1fcaa] active:border-[#47FF37]  active:border-[2px]">
+                <a href="./audio.html"><img class="lg:w-18 lg:h-18 w-15 h-10 md:tex-sm" src="./svg/waveform.svg" alt=""></a>
+                <div class="hidden md:block lg:block md:tex-sm">Audio</div>
             </div>
         </div>
     </div>
-    <div id="carouselExampleControls" class="carousel slide flex justify-center items-center w-[92%] lg:h-[100vh] h-[60vh] m-auto bg-white rounded-b-2xl" data-bs-ride="carousel">
-        <div class="carousel-inner w-[80%] h-[80%] lg:h-[60%] m-auto">
-            <div class="carousel-item active">
-            <img src="./img/slideImg.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_3.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_4.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_5.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_6.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="./img/slide_7.png" class="d-block w-100" alt="...">
-            </div>
+
+    <div class="main w-[92%] h-full top-[16vh] lg:top-[8vh] md:top-[13vh] lg:h-[100vh]  bg-white m-auto lg:my-8 lg:p-8 md:my-8 md:p-8 p-5 py-5 border-solid rounded-b-2xl lg:grid lg:grid-cols-12 lg:gap-4 ">
+        <div class="sidebar lg:col-span-3 flex flex-col lg:gap-2 md:[gap-1 shadow-md w-[90%] m-auto flex flex-col justify-center]">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="context h-full lg:relative lg:col-span-8 p-7 lg:pt-0 lg:pb-20 md:pt-10 lg:top-[8vh] lg:overflow-y-auto lg:max-h-[calc(100vh-4rem)] md:mb-24">
+            <h1 class="font-semibold lg:text-3xl md:text-2xl md:pb-1 lg:pb-3 ">Learning Objectives</h1>
+            <p>By the end of this section, you will be able to:</p>
+            <ul class="flex flex-col gap-2 list-disc p-5 pl-10">
+                <li>Contrast traditional economies, command economies, and market economies</li>
+                <li>Explain gross domestic product (GDP)</li>
+                <li>Assess the importance and effects of globalization</li>
+            </ul>
+            <p class="pb-4">Think about what a complex system a modern economy is. It includes all production of goods and services, all buying and selling, all employment. The economic life of every individual is interrelated, at least to a small extent, with the economic lives of thousands or even millions of other individuals. Who organizes and coordinates this system? Who ensures that, for example, the number of televisions a society provides is the same as the amount it needs and wants? Who ensures that the right number of employees work in the electronics industry? Who ensures that televisions are produced in the best way possible? How does it all get done?
+            </p>
+            <p class="py-5">There are at least three ways that societies organize an economy. The first is the traditional economy, which is the oldest economic system and is used in parts of Asia, Africa, and South America. Traditional economies organize their economic affairs the way they have always done (i.e., tradition). Occupations stay in the family. Most families are farmers who grow the crops using traditional methods. What you produce is what you consume. Because tradition drives the way of life, there is little economic progress or development.
+            </p>
+            <img src="./img/pyramid.jpg" alt="">
+            <p class="pt-5">Command economies are very different. In a command economy, economic effort is devoted to goals passed down from a ruler or ruling class. Ancient Egypt was a good example: a large part of economic life was devoted to building pyramids, like those in Figure 1.8, for the pharaohs. Medieval manor life is another example: the lord provided the land for growing crops and protection in the event of war. In return, vassals provided labor and soldiers to do the lord’s bidding. In the last century, communism emphasized command economies.</p>
+            <p class="pt-5">In a command economy, the government decides what goods and services will be produced and what prices it will charge for them. The government decides what methods of production to use and sets wages for workers. The government provides many necessities like healthcare and education for free. Currently, Cuba and North Korea have command economies.
+
+</p>
+        </div>
     </div>
+
     <div class="main-footer w-full h-[8vh] flex pt-8 p-3 justify-between">
         <div class="logo flex justify-center items-center">
             <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -124,6 +110,6 @@
         <div class="flex justify-center items-center lg:pr-3 md:pr-2">
             <div class="lg:text-lg ">All right reserved</div>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
