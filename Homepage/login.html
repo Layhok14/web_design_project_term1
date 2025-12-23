@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Log In</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="transitiion.js"></script>
-    <link rel="stylesheet" href="transition.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/transition.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <!-- javascript -->
+    <script src="../javascript/login.js" defer></script>
+    <script src="../javascript/transitiion.js" defer></script>
 </head>
 
 <body class="min-h-screen flex items-center justify-center bg-gray-100">
@@ -28,17 +33,21 @@
                 </div>
 
                 <!-- Password -->
-                <div>
+                <div class=" box">
                     <label class="font-semibold">Password</label>
                     <input id="loginPassword" type="password" placeholder="Password" required
                         class="w-full border-2 rounded-md p-2 focus:outline-none focus:border-orange-400" />
+                    <span id="showBtn">Show</span>
                 </div>
 
                 <!-- Button -->
-                <button onclick="login()" type="submit"
-                    class="w-full bg-orange-400 text-white font-semibold py-2 rounded-md hover:bg-orange-500 transition">
-                    <a href="../UnlockHomepage/homepage Unlock.html">Log In</a>
-                </button>
+                <div class="form-element ">
+                    <button onclick="login()"
+                        class=" w-full border-2 rounded-md p-2  bg-orange-400 hover:bg-orange-500" type="button">
+                        Log In
+                    </button>
+                </div>
+
 
                 <!-- for sm -->
                 <p class="switch text-sm md:hidden">
@@ -54,7 +63,7 @@
             class="hidden md:flex w-1/2 bg-orange-400 text-white flex-col items-center justify-center px-10 rounded-l-[150px]">
             <h1 class="text-4xl font-bold mb-4">Hello, Welcome!</h1>
             <p class="mb-6">Don't have an account?</p>
-            <a href="signUp.html" onclick="switchPage(event, 'signup.html','left')"
+            <a href="signUp.html" onclick="switchPage(event, 'signUp.html','left')"
                 class="border-2 border-white px-6 py-1 font-bold rounded hover:bg-orange-500 transition animate-bounce">
                 Register
             </a>
