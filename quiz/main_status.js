@@ -94,6 +94,23 @@ class QuizStatus {
             window.dispatchEvent(new CustomEvent('quizProgressUpdated'));
         
     }
+    static clearAllStorage() {
+        localStorage.removeItem('quizProgress');
+        localStorage.removeItem('quizProgressUpdate');
+        sessionStorage.removeItem('currentAnswers');
+        localStorage.setItem('quizProgress', JSON.stringify({
+            mcq: { answered: 0, total: 5, answers: {} },
+            written: { answered: 0, total: 5, answers: {} },
+            lab: { answered: 0, total: 5, answers: {} }
+        }));
+        sessionStorage.setItem('currentAnswers', JSON.stringify({
+            mcq: {},
+            written: {},
+            lab: {}
+        }));
+        
+        console.log('All quiz storage cleared and reset');
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
